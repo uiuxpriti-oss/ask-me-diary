@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://*.supabase.co; media-src 'self' blob: https://*.supabase.co; connect-src 'self' https://*.supabase.co wss://*.supabase.co; base-uri 'self'; form-action 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ask Me Beta Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="admin">
+      <span id="brandMark"></span>
+      <span><span class="brand-name" style="display:block">Ask Me Beta Admin</span><span class="brand-sub" id="brandSub">Lumenore · research team</span></span>
+    </a>
+    <div class="top-actions" id="topActions"></div>
+  </div>
+  <nav class="wrap tabs" id="tabs" role="tablist" aria-label="Admin sections"></nav>
+</header>
+<main class="wrap" id="main">
+  <div class="loading"><p class="eyebrow">Opening the dashboard</p><p style="margin-top:6px">Loading…</p></div>
+</main>
+<div id="tip" class="tip" hidden></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<div id="lightbox" class="lightbox" hidden><img id="lightboxImg" alt="Screenshot from an entry"><button class="btn small" id="lightboxClose" type="button">Close</button></div>
+<script src="assets/vendor/supabase-2.117.2.js"></script>
+<script src="assets/config.js"></script>
+<script src="assets/common.js"></script>
+<script src="assets/data.js"></script>
+<script src="assets/admin.js"></script>
+</body>
+</html>
